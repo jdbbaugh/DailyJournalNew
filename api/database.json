@@ -8,25 +8,11 @@
       "id": 1
     },
     {
-      "date": "07/28/2018",
-      "concept": "Objects",
-      "entry": "We learned about objects today, like manbearpigs. Half man, half bear, half pig",
-      "mood": "radical",
-      "id": 2
-    },
-    {
       "date": "08/9/2018",
       "concept": "Loops",
       "entry": "Packed my bags last night pre-flight, zero-hour nine AM",
       "mood": "furious",
       "id": 3
-    },
-    {
-      "date": "12/9/2018",
-      "concept": "Circles",
-      "entry": "chicken salad",
-      "mood": "meh",
-      "id": 4
     },
     {
       "date": "2018-12-18",
@@ -50,46 +36,11 @@
       "id": 11
     },
     {
-      "date": "2018-12-22",
-      "concept": "Apple computers",
-      "entry": "why are they so rad",
-      "mood": "melancholy",
-      "id": 12
-    },
-    {
-      "date": "2018-12-29",
+      "date": "2018-12-30",
       "concept": "Vue",
-      "entry": "Is Vue better then React? I just dont know",
-      "mood": "furious",
-      "id": 13
-    },
-    {
-      "date": "2018-12-29",
-      "concept": "Angular",
-      "entry": "why",
-      "mood": "great",
-      "id": 14
-    },
-    {
-      "date": "2018-12-31",
-      "concept": "forms",
-      "entry": "html form doesnt work",
-      "mood": "furious",
-      "id": 15
-    },
-    {
-      "date": "2018-12-31",
-      "concept": "Object Oriented Code",
-      "entry": "Is this working now?",
-      "mood": "meh",
-      "id": 16
-    },
-    {
-      "date": "",
-      "concept": "C#",
-      "entry": "Backend Development is no joke hombre",
+      "entry": "Is Vue going to become more popular then React?",
       "mood": "sadness",
-      "id": 17
+      "id": 12
     }
   ]
 }

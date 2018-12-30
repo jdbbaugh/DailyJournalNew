@@ -2,7 +2,6 @@ import journalData from "./journalData.js"
 
 const eventListener = {
   journalButton () {
-    // console.log("clickity");
     const journalDate = document.getElementById("journalDate");
     const journalConcept = document.getElementById("journalConcept");
     const journalEntry = document.getElementById("journalEntry");
@@ -19,5 +18,13 @@ const eventListener = {
       console.log(entryObject);
       journalData.saveJournalEntry(entryObject);
   },
+  deleteJournalEntry () {
+    let entryToDelete = event.target.id.split("-")
+    console.log(entryToDelete[1]);
+    journalData.deleteJournalEntry(entryToDelete[1]);
+    console.log((`section-${entryToDelete[1]}`));
+    let goodByeSearchResults = document.getElementById(`section-${entryToDelete[1]}`);
+    goodByeSearchResults.parentNode.removeChild(goodByeSearchResults);
+  }
 };
 export default eventListener
