@@ -17,7 +17,7 @@ const eventListener = {
         mood: moodValue
       }
       console.log(entryObject);
-      // journalData.saveJournalEntry(entryObject);
+      journalData.saveJournalEntry(entryObject);
   },
 };
 export default eventListener

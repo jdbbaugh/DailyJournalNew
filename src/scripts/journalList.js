@@ -5,19 +5,32 @@ import domComponents from "./domComponents";
 
 const journalList = {
   journalContainer (journalEntries) {
-    let journalContent = document.createDocumentFragment();
-    const journalElements = ["h2", "section", "p", "p"];
+    const journalContent = document.createDocumentFragment();
+
+
     const journalObjectInfo = [journalEntries.concept, journalEntries.date, journalEntries.mood, journalEntries.entry]
-    let j = 0;
+    let j = -1;
     journalEntries.forEach(entry => {
-      j++;
-      journalContent.appendChild(domComponents.createDomElement({
-        elementType: "section",
-        attributes: {
-          class: "resource-section",
-          id: `resource-${j}`
-        }
-      }));
+      const sectionContainer =document.createElement("section");
+      sectionContainer.setAttribute("class", "resource-section");
+      journalContent.appendChild(sectionContainer);
+
+      const journalh2 = document.createElement("h2")
+      const journalSection =document.createElement("section");
+      const journalMood = document.createElement("p")
+      const journalEntry = document.createElement("p")
+
+      journalh2.textContent = entry.concept;
+      journalSection.textContent = entry.date;
+      journalMood.textContent = entry.mood;
+      journalEntry.textContent = entry.entry;
+
+      sectionContainer.appendChild(journalh2);
+      sectionContainer.appendChild(journalSection);
+      sectionContainer.appendChild(journalMood);
+      sectionContainer.appendChild(journalEntry);
+      
+
     });
     return journalContent;
   }
