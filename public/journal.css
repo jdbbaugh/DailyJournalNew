@@ -1,0 +1,22 @@
+body {
+  background-color: lightblue;
+}
+
+fieldset {
+  display: flex;
+}
+
+h2 {
+text-align: center;
+background-color: lightskyblue
+}
+
+.resource-section {
+  font-family: 'Bungee', cursive;
+  border: 5px solid rgb(55, 48, 48);
+  margin: 5px;
+}
+
+button {
+  background-color: lightskyblue;
+}
