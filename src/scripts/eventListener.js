@@ -1,4 +1,4 @@
-// import journalData from "./journalData.js"
+import journalData from "./journalData.js"
 
 const eventListener = {
   journalButton () {

@@ -19,16 +19,19 @@ const journalList = {
       const journalSection =document.createElement("section");
       const journalMood = document.createElement("p")
       const journalEntry = document.createElement("p")
+      const entryDeleteButton = document.createElement("button")
 
       journalh2.textContent = entry.concept;
       journalSection.textContent = entry.date;
       journalMood.textContent = entry.mood;
       journalEntry.textContent = entry.entry;
+      entryDeleteButton.textContent = "Delete Entry"
 
       sectionContainer.appendChild(journalh2);
       sectionContainer.appendChild(journalSection);
       sectionContainer.appendChild(journalMood);
       sectionContainer.appendChild(journalEntry);
+      sectionContainer.appendChild(entryDeleteButton);
       
 
     });
