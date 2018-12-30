@@ -1,4 +1,4 @@
-import journalData from "./journalData.js"
+// import journalData from "./journalData.js"
 
 const eventListener = {
   journalButton () {
@@ -17,7 +17,7 @@ const eventListener = {
         mood: moodValue
       }
       console.log(entryObject);
-      journalData.saveJournalEntry(entryObject);
+      // journalData.saveJournalEntry(entryObject);
   },
 };
 export default eventListener
