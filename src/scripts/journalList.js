@@ -1,4 +1,6 @@
-import domComponents from "./domComponents";
+import eventListener from "./eventListener";
+
+// import domComponents from "./domComponents";
 
 // import domComponents from "./domComponents.js"
 // import journal from "./journal.js"
@@ -6,13 +8,10 @@ import domComponents from "./domComponents";
 const journalList = {
   journalContainer (journalEntries) {
     const journalContent = document.createDocumentFragment();
-
-
-    const journalObjectInfo = [journalEntries.concept, journalEntries.date, journalEntries.mood, journalEntries.entry]
-    let j = -1;
     journalEntries.forEach(entry => {
       const sectionContainer =document.createElement("section");
       sectionContainer.setAttribute("class", "resource-section");
+      sectionContainer.setAttribute("id", `section-${entry.id}`)
       journalContent.appendChild(sectionContainer);
 
       const journalh2 = document.createElement("h2")
@@ -26,12 +25,16 @@ const journalList = {
       journalMood.textContent = entry.mood;
       journalEntry.textContent = entry.entry;
       entryDeleteButton.textContent = "Delete Entry"
+      entryDeleteButton.setAttribute("id",`delete-${entry.id}`)
 
       sectionContainer.appendChild(journalh2);
       sectionContainer.appendChild(journalSection);
       sectionContainer.appendChild(journalMood);
       sectionContainer.appendChild(journalEntry);
       sectionContainer.appendChild(entryDeleteButton);
+      entryDeleteButton.addEventListener("click", () => {
+        eventListener.deleteJournalEntry();
+      })
       
 
     });

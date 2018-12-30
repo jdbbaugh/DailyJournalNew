@@ -70,9 +70,12 @@ const journal = {
   });
   document.querySelector("#form-container").appendChild(domComponents.createDomElement({
     elementType: "button",
-    content: "Record Journal Entry"
+    content: "Record Journal Entry",
+    attributes: {
+      id: "entry-button"
+    }
   }))
-  document.querySelector("button").addEventListener("click", () => {
+  document.querySelector("#entry-button").addEventListener("click", () => {
       eventListener.journalButton();
   });
   document.querySelector(".output").appendChild(domComponents.createDomElement({

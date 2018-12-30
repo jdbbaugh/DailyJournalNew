@@ -1,4 +1,4 @@
-import eventListener from "./eventListener.js"
+// import eventListener from "./eventListener.js"
 
 
 const journalData = {
@@ -15,6 +15,15 @@ const journalData = {
     body: JSON.stringify(entryToSave)
 })
   },
+  deleteJournalEntry (entryToDelete) {
+    fetch(`http://localhost:8088/entries/${entryToDelete}`, {
+  method: "DELETE",
+  headers: {"Content-Type": "application/json"},
+  body: JSON.stringify({id: entryToDelete})
+})
+.then(res => res.text())
+.then(res => alert(`you deleted Journal Entry ${entryToDelete}`))
+  }
 };
 
 export default journalData
