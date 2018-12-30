@@ -1,0 +1,67 @@
+{
+  "entries": [
+    {
+      "date": "07/24/2018",
+      "concept": "Array methods",
+      "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
+      "mood": "meh",
+      "id": 1
+    },
+    {
+      "date": "07/28/2018",
+      "concept": "Objects",
+      "entry": "We learned about objects today, like manbearpigs. Half man, half bear, half pig",
+      "mood": "radical",
+      "id": 2
+    },
+    {
+      "date": "08/9/2018",
+      "concept": "Loops",
+      "entry": "Packed my bags last night pre-flight, zero-hour nine AM",
+      "mood": "furious",
+      "id": 3
+    },
+    {
+      "date": "12/9/2018",
+      "concept": "Circles",
+      "entry": "chicken salad",
+      "mood": "meh",
+      "id": 4
+    },
+    {
+      "date": "2018-12-18",
+      "concept": "React",
+      "entry": "learnt to make stuff",
+      "mood": "radical",
+      "id": 9
+    },
+    {
+      "date": "2018-12-18",
+      "concept": "For In Loops",
+      "entry": "Learned loop for objects",
+      "mood": "melancholy",
+      "id": 10
+    },
+    {
+      "date": "2018-12-18",
+      "concept": "Validation check",
+      "entry": "Learned how to do some validation",
+      "mood": "furious",
+      "id": 11
+    },
+    {
+      "date": "2018-12-22",
+      "concept": "Apple computers",
+      "entry": "why are they so rad",
+      "mood": "melancholy",
+      "id": 12
+    },
+    {
+      "date": "2018-12-29",
+      "concept": "Vue",
+      "entry": "Is Vue better then React? I just dont know",
+      "mood": "furious",
+      "id": 13
+    }
+  ]
+}

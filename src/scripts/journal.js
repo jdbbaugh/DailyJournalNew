@@ -1,9 +1,10 @@
 import domComponents from "./domComponents.js"
+import eventListener from "./eventListener.js";
 
 const journal = {
   entryForm () {
     document.querySelector(".output").appendChild(domComponents.createDomElement({
-      elementType: "form",
+      elementType: "div",
       attributes: {
         id: "form-container",
       }
@@ -22,7 +23,7 @@ const journal = {
   let i = 0;
   labelArray.forEach(label => {
     i++;
-    console.log(i)
+    // console.log(i);
     document.querySelector(`.field-${i}`).appendChild(domComponents.createDomElement({
       elementType: "label",
       content: `${contentArray[i]}`,
@@ -65,7 +66,13 @@ const journal = {
       }
     }))
   });
-  
+  document.querySelector("#form-container").appendChild(domComponents.createDomElement({
+    elementType: "button",
+    content: "Record Journal Entry"
+  }))
+  document.querySelector("button").addEventListener("click", () => {
+      eventListener.journalButton();
+  });
   },
 
 }

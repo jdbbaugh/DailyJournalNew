@@ -1,9 +1,9 @@
 
 
-const journalList = {
+// const journalList = {
 
-}
+// }
 
-export default journalList
+// export default journalList
 
 
