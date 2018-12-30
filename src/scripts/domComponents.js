@@ -1,4 +1,5 @@
-import journal from "./journal.js"
+// import journal from "./journal.js"
+// import journalList from "./journalList.js"
 
 const domComponents = {
   createDomElement({ elementType, content = null, cssClass = "", attributes = {} }) {

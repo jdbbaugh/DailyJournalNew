@@ -1,10 +1,12 @@
 import domComponents from "./domComponents.js"
 import eventListener from "./eventListener.js";
+import journalData from "./journalData.js";
+import journalList from "./journalList.js";
 
 const journal = {
   entryForm () {
     document.querySelector(".output").appendChild(domComponents.createDomElement({
-      elementType: "div",
+      elementType: "form",
       attributes: {
         id: "form-container",
       }
@@ -73,8 +75,18 @@ const journal = {
   document.querySelector("button").addEventListener("click", () => {
       eventListener.journalButton();
   });
+  document.querySelector(".output").appendChild(domComponents.createDomElement({
+    elementType: "article",
+    attributes: {
+      id: "display-container",
+      class: "entryLog"
+    }
+  }));
+    journalData.getResources()
+    .then(journalObject => {
+      document.getElementById("display-container").appendChild(journalList.journalContainer(journalObject));
+    })
   },
-
 }
 
 export default journal
