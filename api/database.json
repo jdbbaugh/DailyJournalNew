@@ -62,6 +62,34 @@
       "entry": "Is Vue better then React? I just dont know",
       "mood": "furious",
       "id": 13
+    },
+    {
+      "date": "2018-12-29",
+      "concept": "Angular",
+      "entry": "why",
+      "mood": "great",
+      "id": 14
+    },
+    {
+      "date": "2018-12-31",
+      "concept": "forms",
+      "entry": "html form doesnt work",
+      "mood": "furious",
+      "id": 15
+    },
+    {
+      "date": "2018-12-31",
+      "concept": "Object Oriented Code",
+      "entry": "Is this working now?",
+      "mood": "meh",
+      "id": 16
+    },
+    {
+      "date": "",
+      "concept": "C#",
+      "entry": "Backend Development is no joke hombre",
+      "mood": "sadness",
+      "id": 17
     }
   ]
 }
